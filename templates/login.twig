@@ -1,0 +1,43 @@
+{% extends "/layout/loginMaster.twig" %}
+{% set title = "Login" %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/login.css">
+{% endblock %}
+
+{% block content %}
+
+	<section class="login d-flex">
+		<div class="login-left w-50 h-100">
+			<div class="row justify-content-center align-items-center h-100">
+				<div class="col-6">
+					<div class="header">
+						<h1>Welcome Back</h1>
+					</div>
+
+					<div class="login-form">
+						<form action="/login" method="POST">
+							<label for="username">Username</label>
+							<input type="username" class="form-control" name="username" id="username" placeholder="Enter your Username">
+
+							<label for="password">Password</label>
+							<input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password">
+
+							<a href="#" class="text-decoration-none">Forgot Password</a>
+
+							<button class="signin" type="submit">Sign In</button>
+							<hr>
+							<button class="signup" type="submit">Sign Up</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="login-right bg-primary w-50 h-100" style="background-image: url('/img/bgkopi.JPG'); background-size: cover;"></div>
+	</section>
+
+{% endblock %}
+
+{% block js %}
+	<script src="/js/home.js"></script>
+{% endblock %}

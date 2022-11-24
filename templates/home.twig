@@ -1,0 +1,84 @@
+{% extends "/layout/master.twig" %}
+{% set title = "Home" %}
+
+{% block css %}
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+	<section class="container-fluid">
+		<div class="container-fluid px-5 text-center">
+			<div class="row">
+				<div class="container col-8 p-3 justify-content-center relative">
+					<h2 class="responsive-font-title">Menu</h2>
+					
+					<div class="row justify-content-center"  id="view_menu">
+						{# menampilkan menu #}
+					</div>
+
+				</div>
+
+
+				<div class="col bg-primary p-4 shadow-sm rounded-lg-3 order mt-5">
+					<h2 class="responsive-font-title">Order</h2>
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead class="thead-dark">
+								<tr>
+								<th scope="col">No</th>
+								<th scope="col">Order</th>
+								<th scope="col">Qty</th>
+								<th scope="col">Prices</th>
+								<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<th scope="row">1</th>
+								<td class="text-left">Rice Bowl</td>
+								<td>1</td>
+								<td class="text-right">Rp 20.000</td>
+								<td><img src="/img/icon/icons8-trash-can-48.png" alt="" style="height: 24px;"></td>
+								</tr>
+								
+								<tr>
+								<th scope="row">2</th>
+								<td class="text-left">Rice Bowl</td>
+								<td>1</td>
+								<td class="text-right">Rp 20.000</td>
+								<td><img src="/img/icon/icons8-trash-can-48.png" alt="" style="height:24px;"></td>
+								</tr>
+								
+								<tr class="rounded-lg-3">
+								<th scope="row">3</th>
+								<td class="text-left">Rice Bowl</td>
+								<td>1</td>
+								<td class="text-right">Rp 20.000</td>
+								<td><img src="/img/icon/icons8-trash-can-48.png" alt=""style="height:24px;"></td>
+								</tr>
+								
+								<tr>
+								<th scope="row"></th>
+								<td colspan="2" class="text-right">Total</td>
+								<td class="text-right">Rp 30.000</td>
+								<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+
+		</div>
+	</section>
+
+{% endblock %}
+
+{% block js %}
+	<script src="/js/home.js"></script>
+{% endblock %}

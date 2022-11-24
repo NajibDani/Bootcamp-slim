@@ -1,0 +1,143 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.card{
+  border-radius: 24px;
+  background-color: #ffff;
+  border: #333;
+}
+
+.order{
+  height: 50%;
+  position: sticky;
+  top: 0;
+}
+
+.card-image{
+  position: relative;
+  height: 75%;
+  width: auto;
+  border-radius: 50%;
+}
+
+.card-image .card-img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.card-content .card-add{
+  height: 100%;
+  width: auto;
+}
+
+.image-content{
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-content{
+  padding: 5px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name{
+  font-family: sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+  line-height: 24px;
+  color: #333;
+}
+
+.description{
+  font-family: sans-serif;
+  font-size: 1vw;
+  font-weight: 300;
+  line-height: 16px;
+  color: rgb(87, 87, 87);
+}
+
+.button-add{
+  border-radius: 8px;
+  font-size: 1vw;
+  padding: 5% 10%;
+  border: 0;
+}
+
+.pagination{
+  text-align: center;
+  margin: 30px 30px 60px;
+  user-select: none;
+}
+
+.pagination li{
+  display: inline-block;
+  margin: 5px;
+}
+
+.pagination li a{
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 45px;
+}
+
+.previous-page, .next-page{
+  width: 80px;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+
+.current-page, .dots{
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.table-responsive{
+  border-radius: 16px;
+}
+
+/* color*/
+.bg-primary{
+    background-color: #D6E4E5 !important;
+  }
+
+/* rounded image */
+@media (min-width: 992px) {
+  .rounded-lg-3 { border-radius: 24px; }
+  }
+  
+
+@media (min-width: 1200px) {
+  .responsive-font-title {
+    font-size: 32px;
+  }
+
+  .card-image .menu-img{
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .responsive-font-title {
+    font-size: 24px;
+  }
+
+  .card-image .menu-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 25%;
+    object-fit: cover;
+  }
+}

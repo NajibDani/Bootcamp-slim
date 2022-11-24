@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    {% block css %}{% endblock %}
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary mb-3">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="/home">CASHIER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-center">
+                    <li class="nav-item align-items-center">
+                        <p class="m-3">Welcome</p>
+                    </li>
+                    </li>
+                </ul>
+                <a href="/dashboard" class="btn btn-outline-success mx-3" id="dashboard">Dashboard</a>
+                <button class="btn btn-outline-danger" type="submit" id="logout">Log Out</button>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <section class="py-5 bg-primary">
+        <footer class="d-flex flex-wrap justify-content-center align-items-center bg-primary">
+            {# <div class="col-md-4 d-flex align-items-center"> #}
+                <span class="mb-3 mb-md-0 text-dark">Copyright &copy; 2022. NajibDani.</span>
+            {# </div> #}
+        </footer>
+    </section>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    {% block js %}
+    {% endblock %}
+</body>
+
+</html>
